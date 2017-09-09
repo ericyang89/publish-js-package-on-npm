@@ -1,4 +1,3 @@
-// asfdass
 const aaa = (content = "", blackList = []) => {
   const reg = new RegExp(blackList.join("|"), "ig");
   return content.replace(reg, "*****");
