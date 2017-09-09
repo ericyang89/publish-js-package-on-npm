@@ -1,6 +1,6 @@
 {
   "name": "publish-js-package-on-npm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "test for pubulish package on npm ",
   "main": "build/index.js",
   "scripts": {
@@ -12,13 +12,19 @@
     "release": "np"
   },
   "babel": {
-    "presets": ["latest"]
+    "presets": [
+      "latest"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ericyang89/publish-js-package-on-npm.git"
   },
-  "keywords": ["publish", "npm", "test"],
+  "keywords": [
+    "publish",
+    "npm",
+    "test"
+  ],
   "author": "ericyang89",
   "license": "ISC",
   "bugs": {
