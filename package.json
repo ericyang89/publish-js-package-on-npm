@@ -1,0 +1,39 @@
+{
+  "name": "publish-js-package-on-npm",
+  "version": "1.0.0",
+  "description": "test for pubulish package on npm ",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch \"yarn run build\" src",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
+  },
+  "babel": {
+    "presets": ["latest"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericyang89/publish-js-package-on-npm.git"
+  },
+  "keywords": ["publish", "npm", "test"],
+  "author": "ericyang89",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericyang89/publish-js-package-on-npm/issues"
+  },
+  "homepage": "https://github.com/ericyang89/publish-js-package-on-npm#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "jest": "^21.0.2",
+    "np": "^2.16.0",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "global": "^4.3.2"
+  }
+}
