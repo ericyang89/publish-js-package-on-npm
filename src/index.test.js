@@ -2,7 +2,7 @@ import aaa from "."; //= require("./index");
 
 test("replace the words when attack", () =>
   expect(aaa("this is a test, and test is an in the blacklist", ["test"])).toBe(
-    "this is a ****, and **** is an in the blacklist",
+    "this is a *****, and ***** is an in the blacklist",
   ));
 
 test("replace the words when attack", () =>
@@ -11,4 +11,4 @@ test("replace the words when attack", () =>
       "test",
       "ok",
     ]),
-  ).toBe("this is a ****, and **** is an in the blacklist,and ****"));
+  ).toBe("this is a *****, and ***** is an in the blacklist,and *****"));
