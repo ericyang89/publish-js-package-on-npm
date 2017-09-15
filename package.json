@@ -1,6 +1,6 @@
 {
   "name": "publish-js-package-on-npm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "test for pubulish package on npm ",
   "main": "build/index.js",
   "scripts": {
